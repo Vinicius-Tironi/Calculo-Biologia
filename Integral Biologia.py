@@ -49,7 +49,7 @@ def raizes_funcao(funcao):
 # Definir a função:
 print(line)
 
-funcao = 2*x
+funcao = 3*x**2
 
 print('f(x) =' , funcao)
 #funcao = input('f(x) = ' , )
@@ -74,15 +74,3 @@ for k in range(-1,3):      # Constantes K
     px.extend(px1)
     
 px.show()
-
-
-# Integral Definida:
-    
-funcao = 1/((x**2)+1)
-
-x_0 = 0
-x_1 = 5
-
-integral = integrate(funcao, x)
-print('F(X) = ' , integral , '+ K')
-print(line)
