@@ -3,7 +3,7 @@ import sympy as sp
 from sympy.plotting import plot
 from sympy import Symbol, S
 from sympy import init_printing
-from sympy import integrate, Symbol, dsolve, Function, diff, Eq, roots
+from sympy import integrate, Symbol, dsolve, Function, diff, Eq, roots, Eq, plot_implicit, plot_parametric
 from sympy.calculus.util import continuous_domain
 import matplotlib.pyplot as plt
 import math
@@ -49,12 +49,12 @@ def raizes_funcao(funcao):
 # Definir a função:
 print(line)
 
-funcao = 
+funcao = 2*x
 
 print('f(x) =' , funcao)
 #funcao = input('f(x) = ' , )
 print('Domínio de f:' , continuous_domain(funcao, x, S.Reals))
-plot(funcao, (x, -6, 6) , ylim=[-15,15] , line_color = 'blue')
+#plot(funcao, (x, -6, 6) , ylim=[-2, 2] , line_color = 'blue')
 raizes_funcao(funcao)
 print(line)
 
@@ -76,5 +76,13 @@ for k in range(-1,3):      # Constantes K
 px.show()
 
 
+# Integral Definida:
+    
+funcao = 1/((x**2)+1)
 
+x_0 = 0
+x_1 = 5
 
+integral = integrate(funcao, x)
+print('F(X) = ' , integral , '+ K')
+print(line)
