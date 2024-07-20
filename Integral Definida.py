@@ -8,9 +8,9 @@ pi = math.pi
 
 # Definir a Função
 
-f = lambda x : x**2
+f = lambda x : (np.sin(4*x))
 
-a = -5 ; b = 5 ;  N = 10
+a = -pi ; b = pi ;  N = 100
 n = 10
 
 x = np.linspace(a,b,N+1)
